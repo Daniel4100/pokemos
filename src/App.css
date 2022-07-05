@@ -1,0 +1,478 @@
+.pokedex-container{
+  background-color: crimson;
+  height: 120px;
+  border-bottom: 30px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.pokedex-logo-2{
+  width: 350px;
+  position: relative;
+  bottom: 40px;
+}
+.pokedex-logo{
+  width: 200px;
+  position: relative;
+  bottom: 0px;
+}
+.pokedex-circle{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  position: absolute;
+  bottom: -42px;
+  border: 7px solid white;
+  outline: 10px solid black;
+}
+
+.form-container{
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  gap: 20px;
+}
+
+form input{
+  width: 300px;
+  height: 35px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 12px 6px 20px #0c0c0c34;
+}
+form input:checked{
+  border: 1px solid black;
+}
+
+form select{
+  width: 150px;
+  padding: 0px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 12px 6px 20px #0c0c0c34;
+  cursor: pointer;
+}
+
+form select:active{
+  box-shadow: none;
+}
+
+h2{
+  font-weight: 100;
+  margin: 20px;
+}
+
+h2 span{
+  color: crimson;
+}
+
+
+
+.pagination-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+}
+.pagination-number-container{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+.pagination-prev-next{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 13, 13);
+  border-radius: 8px;
+}
+.page-number {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 30px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.page-active{
+  background-color: rgba(248, 8, 8, 0.911);
+}
+
+.card-pokemon .card__images {
+  width: 100%;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  justify-content: center;
+  padding: 10px 90px;
+  margin-top: 30px;
+}
+.poison {
+  background: #b763cf;
+  box-shadow: 0 0 20px #b763cf;
+}
+.grass {
+  background: #5fbd58;
+  box-shadow: 0 0 20px #5fbd58;
+}
+.bug {
+  background: #92bc2c;
+  box-shadow: 0 0 20px #92bc2c;
+}
+.fire {
+  background: #fba54c;
+  box-shadow: 0 0 20px #fba54c;
+}
+.water {
+  background: #539ddf;
+  box-shadow: 0 0 20px #539ddf;
+}
+.flying {
+  background: #a1bbec;
+  box-shadow: 0 0 20px #a1bbec;
+}
+.normal {
+  background: #a0a29f;
+  box-shadow: 0 0 20px #a0a29f;
+}
+.electric {
+  background: #f2d94e;
+  box-shadow: 0 0 20px #f2d94e;
+}
+.ground {
+  background: #da7c4d;
+  box-shadow: 0 0 20px #da7c4d;
+}
+.fairy {
+  background: #ee90e6;
+  box-shadow: 0 0 20px #ee90e6;
+}
+.fighting {
+  background: #d3425f;
+  box-shadow: 0 0 20px #d3425f;
+}
+.psychic {
+  background: #fa8581;
+  box-shadow: 0 0 20px #fa8581;
+}
+.rock {
+  background: #c9bb8a;
+  box-shadow: 0 0 20px #c9bb8a;
+}
+.steel {
+  background: #5695a3;
+  box-shadow: 0 0 20px #5695a3;
+}
+.ice {
+  background: #75d0c1;
+  box-shadow: 0 0 20px #75d0c1;
+}
+.ghost {
+  background: #5f6dbc;
+  box-shadow: 0 0 20px #5f6dbc;
+}
+.dragon {
+  background: #0c69c8;
+  box-shadow: 0 0 20px #0c69c8;
+}
+.dark {
+  background: #595761;
+  box-shadow: 0 0 20px #595761;
+}
+
+
+
+
+
+
+
+.bgpoison {
+  background: #b763cf;
+  background: linear-gradient(0deg,#e2bcec 0%,#ca84dd 48%,#b763cf 100%);
+}
+.bggrass {
+  background: #5fbd58;
+  background: linear-gradient(0deg,rgb(227, 255, 209) 0%,rgba(43,131,0,1) 100%);
+}
+.bgbug {
+  background: #92bc2c;
+  background: linear-gradient(0deg,#e3faad 0%,#bddf6e 48%,#92bc2c 100%);
+}
+.bgfire {
+  background: #fba54c;
+  background: linear-gradient(0deg,#ffe0bf 0%,#fcc387 48%,#fba54c 100%);
+}
+.bgwater {
+  background: #539ddf;
+  background: linear-gradient(0deg,#cde8ff 0%,#b1dbff 48%,#80bef5 100%);
+  
+}
+.bgflying {
+  background: #a1bbec;
+  background: linear-gradient(0deg,#d0daec 0%,#bdd1f5 48%,#a1bbeb 100%);
+}
+.bgnormal {
+  background: #a0a29f;
+  background: linear-gradient(0deg,#fcfcfc 0%,#dfe0df 48%,#a0a29f 100%);
+}
+.bgelectric {
+  background: #f2d94e;
+  background: linear-gradient(0deg,#fdf6ca 0%,#e9da84 48%,#f2d94e 100%);
+}
+.bgground {
+  background: #da7c4d;
+  background: linear-gradient(0deg,#ffc3a5 0%,#df9d7d 48%,#da7c4d 100%);
+}
+.bgfairy {
+  background: #ee90e6;
+  background: linear-gradient(0deg,#ffdcfc 0%,#fabaf5 48%,#ee90e6 100%);
+}
+.bgfighting {
+  background: #d3425f;
+  background: linear-gradient(0deg,#ff95aa 0%,#e66e86 48%,#d3425f 100%);
+}
+.bgpsychic {
+  background: #fa8581;
+  background: linear-gradient(0deg,#ffdddc 0%,#ffaba9 48%,#f17571 100%);
+}
+.bgrock {
+  background: #c9bb8a;
+  background: linear-gradient(0deg,#fff9e4 0%,#dbd1ae 48%,#a39666 100%);
+}
+.bgsteel {
+  background: #5695a3;
+  background: linear-gradient(0deg,#d4f7ff 0%,#7bc8da 48%,#5695a3 100%);
+}
+.bgice {
+  background: #75d0c1;
+  background: linear-gradient(0deg,#a8fff1 0%,#91fdeb 48%,#75d0c1 100%);
+}
+.bgghost {
+  background: #5f6dbc;
+  background: linear-gradient(0deg,#ced5ff 0%,#a8b5fc 48%,#5f6dbc 100%);
+}
+.bgdragon {
+  background: #0c69c8;
+  background: linear-gradient(0deg,#87c3ff 0%,#6198cf 48%,#074786 100%);
+}
+.bgdark {
+  background: #595761;
+  background: linear-gradient(0deg,#9d9d9e 0%,#75747c 48%,#3f3d44 100%);
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  margin-right: 13px;
+  transition: all .2s;
+  border-radius: .28571429rem 0 0 .28571429rem;
+}
+.icon:hover{
+  filter: saturate(200%);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.container-icons{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e8e8e8;
+  color: black;
+  width: 110px;
+  margin: 10px 0;
+  border-radius: .28571429rem
+}
+
+
+/* antes de la tragedia  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f3faf6;
+  background: radial-gradient(circle,rgb(167, 165, 165) 0,#fffefe 100%);
+  background-attachment: fixed;
+}
+img{
+  width: 200px;
+}
+.container {
+  width: 280px;
+}
+
+.card {
+  border-radius: 25px;
+  box-shadow: 12px 6px 20px #0c0c0c34;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform:scale(1.1)
+  
+}
+
+.card-head {
+  position: relative;
+  height: 202px;
+  
+}
+
+.card-logo {
+  width: 55px;
+  margin: 20px;
+}
+
+.product-img {
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+/* .back-text {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-left: -7px;
+  margin-top: -12px;
+  opacity: 0.3;
+  position: relative;
+  bottom: 20px;
+} */
+
+.card-body {
+  height: 255px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+}
+
+.product-title {
+  padding: 20px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.product-title b {
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+
+.product-caption {
+  display: block;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-desc{
+  
+  padding-bottom: 0px;
+  width: 190px;
+}
+
+.product-stats h4 {
+  font-size: 1rem;
+  padding: 0 21px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  width: 180px;
+  text-align: center;
+  border-top: 0.1px solid rgba(206, 203, 203, 0.452);
+  padding-top: 20px;
+
+}
+.product-stats{
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 30px;
+  justify-content: center;
+  align-items: center; */
+}
+.product-properties{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+
+}
+
+
+.product-id {
+  position: absolute;
+  background: #11e9a8;
+  padding: 7px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: -13px;
+  margin-left: -5px;
+  box-shadow: 10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+  left: -20px;
+  top: 30px;
+}
+
+.product-id b {
+  margin-left: 5px;
+}
+
+.card__stats{
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.5em;
+  width: 50px;
+}
+
+.card__number{
+  font-size: 1.5rem;
+}
+
+.card__text{
+  color: rgb(73, 73, 73);
+}
+
+.container-icons__padre{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
