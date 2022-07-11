@@ -1,11 +1,12 @@
 import React from 'react'
 import InputHome from './InputHome'
 
+const typeImages = new URL('../../media', import.meta.url).href
+
 const HomeScreen = () => {
   return (
-    <div>
-      <h1>Podedex</h1>
-      <h2>¡Hola Entrenador!</h2>
+    <div className='container-input__home'>
+      
       <InputHome />
     </div>
   )

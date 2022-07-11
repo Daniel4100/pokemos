@@ -8,10 +8,16 @@ const typeImages = new URL('../../media', import.meta.url).href
 const PokeCard = ({url}) => {
 
   const [pokemon, setPokemon] = useState()
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     axios.get(url)
-      .then(res => setPokemon(res.data))
+      .then(res => {
+        setPokemon(res.data)
+        
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000 * 1.5)})
       .catch(err => console.log(err))
   }, [])
 
@@ -25,7 +31,18 @@ const PokeCard = ({url}) => {
       <div className="card">
         <div className={`card-head bg${pokemon?.types[0].type.name}`}>
           <span className="product-id"> #<b>{pokemon?.id}</b> </span>
+          {
+            loading ? 
+            <img 
+            src={`${typeImages}/loader_img.gif`} 
+            className='loader-gif' 
+            alt='loader' 
+          />  
+          :
           <img src={pokemon?.sprites.other['official-artwork'].front_default} className='product-img' alt="logo" />
+            
+            
+          }
           
         </div>
         <div className="card-body">
@@ -57,15 +74,15 @@ const PokeCard = ({url}) => {
           <div className='container-icons__padre'>
             {pokemon?.types.map((type) => (
               <div key={type.type.url} className='container-icons' >
-              
-                  <img 
-                  src={`${typeImages}/${type.type.name}.svg`} 
-                  className={`icon ${type.type.name}`} 
-                  alt={type.type.name} />
-                
-              
-                  <span>{type.type.name}</span>
-                
+                  
+                    <img 
+                    src={`${typeImages}/${type.type.name}.svg`} 
+                    className={`icon ${type.type.name}`} 
+                    alt={type.type.name} />
+                  
+                  <div className='container-icons_span'>
+                    <span>{type.type.name}</span> 
+                  </div>
               </div>
             ))}
           </div>
