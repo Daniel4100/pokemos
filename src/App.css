@@ -34,7 +34,7 @@
 }
 
 .container-home__form form{
-  position: absolute;
+  
   top: 80%;
   z-index: 11;
 }
